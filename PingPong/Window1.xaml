@@ -1,0 +1,21 @@
+﻿<Window x:Class="PingPong.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PingPong"
+        mc:Ignorable="d"
+        Title="Tastenbelegung ändern" Height="180" Width="305" WindowStartupLocation="CenterScreen" >
+    <Grid Margin="0,0,0,1">
+        <Label Content="Grüner Spieler Nach oben" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+        <Label Content="Grüner Spieler Nach unten" HorizontalAlignment="Left" Margin="10,36,0,0" VerticalAlignment="Top"/>
+        <Label Content="Blauer Spieler Nach oben" HorizontalAlignment="Left" Margin="10,62,0,0" VerticalAlignment="Top"/>
+        <Label Content="Blauer Spieler Nach unten" HorizontalAlignment="Left" Margin="10,88,0,0" VerticalAlignment="Top"/>
+        <ComboBox x:Name="CBKeys1Up" HorizontalAlignment="Left" Margin="162,14,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="CBKeys1Up_SelectionChanged"/>
+        <ComboBox x:Name="CBKeys2Down" HorizontalAlignment="Left" Margin="162,92,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="CBKeys2Down_SelectionChanged"/>
+        <ComboBox x:Name="CBKeys2Up" HorizontalAlignment="Left" Margin="162,66,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="CBKeys2Up_SelectionChanged"/>
+        <ComboBox x:Name="CBKeys1Down" HorizontalAlignment="Left" Margin="162,40,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="CBKeys1Down_SelectionChanged"/>
+        <Button x:Name="bntOK" Content="OK" HorizontalAlignment="Left" Margin="25,118,0,0" VerticalAlignment="Top" Width="120" Click="bntOK_Click"/>
+        <Button x:Name="bntReset" Content="Zurücksetzen" HorizontalAlignment="Left" Margin="162,118,0,0" VerticalAlignment="Top" Width="120" Click="Reset"/>
+    </Grid>
+</Window>
